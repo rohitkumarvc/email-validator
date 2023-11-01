@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i> Validator</div>
+            <ul>
+                <li><a href = "#">Home</a></li>
+                <li><a href = "#">About</a></li>
+                <li><a href = "#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1><i class="fa-regular fa-envelope"></i> Email Validator</h1>
+            <br>
+            <form action="">
+                <div class="input">
+
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email">
+                    <br><br>
+                </div>
+                    
+                <a class = "btn" onclick="fetchData()">Submit</a>
+            </form>
+        </div>
+
+        <br>
+        <img src="https://i.gifer.com/ZKZx.gif" alt="loder">
+
+        <div class="time-out">
+            Error: Request timed out
+        </div>
+        <br>
+
+
+        <div class="result">
+
+            <h3>Results</h3>
+            <table>
+                <tr>
+                    <th>User</th>
+                    <th>Email</th>
+                    <th>Score</th>
+                    <th>State</th>
+                    <th>Disposable</th>
+                </tr>
+                <tr>
+                    <td>User</td>
+                    <td>rohitatwork1323@gmail.com</td>
+                    <td>Score</td>
+                    <td>State</td>
+                    <td>Disposable</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        
+    </footer>
+
+</body>
+<script src="js/index.js"></script>
+
+<script type="text/javascript">
+    var date = new Date().getFullYear();
+    var footer = document.querySelector('footer');
+    footer.innerHTML = `Copyright © ${date} | All rights reserved | Validator.io`;
+</script>
+
+</html>
